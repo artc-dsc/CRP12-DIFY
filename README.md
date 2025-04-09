@@ -77,13 +77,14 @@ docker compose up -d
 After running, you can access the Dify dashboard in your browser at [http://localhost/install](http://localhost/install) and start the initialization process.
 
 #### HTTPS
-#edit .env file
-docker/nginx/ssl put your .crt and .key files
-NGINX_SSL_CERT_FILENAME=file.crt
-NGINX_SSL_CERT_KEY_FILENAME=file.key
-NGINX_HTTPS_ENABLED=true
 
-#start
+edit .env file
+- docker/nginx/ssl put your .crt and .key files
+- NGINX_SSL_CERT_FILENAME=file.crt
+- NGINX_SSL_CERT_KEY_FILENAME=file.key
+- NGINX_HTTPS_ENABLED=true
+
+start
 ```bash
 docker-compose up -d
 ```
